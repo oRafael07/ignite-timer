@@ -84,3 +84,19 @@ export const Status = styled.span<StatusProps>`
     background: ${(props) => props.theme[STATUS_COLORS[props.statusColor]]};
   }
 `
+
+export const Actions = styled.span`
+  button {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    color: ${(props) => props.theme['gray-300']};
+    cursor: pointer;
+
+    transition: color 200ms ease-in-out;
+
+    &:hover {
+      color: ${(props) => props.theme['red-500']};
+    }
+  }
+`
